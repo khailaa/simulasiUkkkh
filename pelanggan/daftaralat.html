@@ -6,32 +6,59 @@
     <title>Daftar Alat</title>
 </head>
 <style>
+    body{
+        background-color: #c9af80;
+    }
+    /*ini bagian proccesor food*/
     .card{
-    background-color: aquamarine;
+    background-color:#1f2a44;
     width: 100%;
     max-width: 250px;
-    margin: 20px; 
+    margin: 12px;
+    display: flex;
+    flex-direction: column; 
     }
     .card-img-top{
         width: 100%;
-        height: 100%;
+        height: 180px;
+        object-fit: contain;
+        display: inline-block; 
     }
+    .card-container{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+    }
+    
+   
 </style>
 <body>
-
+    <div class="card-container">
+    <!-- food proccesor -->
     <div class="card">
-  <img src="./img/WURDEN Procesador de alimentos _ Falabella Chile.jfif" class="card-img-top" alt="...">
+  <img src="./img/WURDEN Procesador de alimentos _ Falabella Chile.jfif" class="card-img-top" alt="gambar food proccesor">
 
   <div class="card-body">
-    <h5 class="card-title">Food Proccesor</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="mengajukan.html" class="btn-solid theme-primary">Ajukan peminjaman</a>
+    <h4 class="card-title"><span style="color:white;"><b>Food Proccesor</b></span></h4>
+    <h5 class="card-harga"><span style="color:#c6a75e;">Rp3.500.000</span></h5>
+    <p class="card-text"><span style="color:white;">Mesin pemotong, pencincang, dan penghalus bumbu dalam jumlah kilogram hanya dalam hitungan menit.</span></p>
+    <a href="mengajukan.html" class="btn-solid theme-primary">Ajukan Peminjaman</a>
   </div>
 </div>
 
+<!--Kompor High Pressure-->
+<div class="card">
+  <img src="./img/komporhighpressure.jfif" class="card-img-top" alt="gambar kompor high pressure">
 
+  <div class="card-body">
+    <h4 class="card-title"><span style="color:white;"><b>Kompor High Pressure</b></span></h4>
+    <h5 class="card-harga"><span style="color:#c6a75e;">Rp580.000</span></h5>
+    <p class="card-text"><span style="color:white;">Kompor gas bertekanan tinggi dengan api besar untuk memasak cepat dalam porsi ratusan.</span></p>
+    <a href="mengajukan.html" class="btn-solid theme-primary">Ajukan Peminjaman</a>
 
-
+</div>
 
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
